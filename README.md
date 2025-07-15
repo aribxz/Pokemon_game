@@ -1,52 +1,51 @@
-📈 Live Stock Tracker
-======================
+🕹️ Terminal Pokémon Catching Game
+===============================
 
-A simple and live stock market price tracker built with Python using the `yfinance` library.
+A fun, simple terminal-based Pokémon-catching game built with Python.
 
-🔍 What It Does
----------------
-- Allows you to enter stock symbols (e.g., AAPL, TSLA, MSFT)
-- Fetches and displays live price, % change, daily high & low
-- Updates prices at your chosen interval
-- Logs all data into a CSV file (`stock_data.csv`) for later review
+🚀 Features
+-----------
+- Random Pokémon encounters while walking
+- Each Pokémon has a random power level (1–100)
+- To catch a Pokémon, guess a secret number between 1–100
+- If you already have a strong Pokémon (power > 50), you get helpful hints!
+- Save/load your caught Pokémon using a `save.json` file
+- Pokédex summary shown at the end
+
+🎮 How to Play
+-------------
+1. Clone this repository or download the files.
+2. Open your terminal.
+3. Run the game.
+4. You'll start walking, and may encounter a Pokémon.
+5. Try to catch it by guessing the correct number!
+6. If you guess right, it’s added to your team and saved.
+7. If you fail, the game ends and shows your Pokédex.
+
+🧠 Hints
+--------
+- Always get “Too low” or “Too high” feedback.
+- If you have a Pokémon with power > 50:
+  - “🔥 You’re very close!” if you're within 5
+  - “🥶 You’re way off…” if you're 25 or more away
+
+💾 Save/Load System
+-------------------
+- Your caught Pokémon are saved in `save.json`
+- When the game starts, it loads your previous progress
+- So you can build your Pokédex over time!
+
+📁 Files
+-------
+- `pokemon_game.py` — Main game file
+- `save.json` — Your Pokédex (created automatically after first catch)
+- `README.txt` — This file
 
 🛠 Requirements
 ---------------
 - Python 3.x
-- Install yfinance:
-    pip install yfinance
-
-📦 Optional (for better formatting):
-- Run in a terminal or console that supports emojis (📈, 🔁, 🛑 etc.)
-
-🚀 How to Use
--------------
-1. Clone or download this repository.
-2. Open a terminal in the directory.
-3. Run the script:
-    python stock_tracker.py
-
-4. Enter stock symbols separated by commas (e.g., AAPL, TSLA, MSFT)
-5. Enter how often you want it to refresh (in seconds).
-6. Press `Ctrl + C` to stop tracking.
-
-📄 Output CSV
--------------
-Each tracked update is logged into `stock_data.csv` with:
-- Symbol
-- Current price
-- % Change
-- Day's High and Low
-- Timestamp
-
-⚠️ Note: The CSV currently rewrites the header row every time. This may lead to duplicate headers in the file.
-
-📁 Files
---------
-- `stock_tracker.py` — Main Python script
-- `stock_data.csv` — Automatically created log file
-- `README.txt` — You're reading it!
+- No external packages required
 
 🧑‍💻 Made by Arib
-------------------------
-Happy tracking! 📊🚀
+-----------------------
+Have fun catching them all! 🧢⚡
